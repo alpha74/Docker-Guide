@@ -1,6 +1,12 @@
 # Creating Official Ubuntu Container using CLI
 
 
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/1920px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="drawing" width="200" height="50"/>
+
+
+
+
 ### 1. Get ubuntu docker image
 - Type command: `docker search ubuntu`
 - We get a list of all related ubuntu images along with description.
@@ -25,6 +31,22 @@
 ### 3. Listing our container
 - Type command: `docker container ls`.
 - A list of container will appear which are in **Running** state.
-- We have not started out container, hence it is not listed.
+- Since we have not started out container, hence it is not listed.
 - Type command: `docker container ls -a` to list all containers.
 - Our container will be displayed with state **Created**.
+
+
+### 4. Getting into Container's file system
+- Type command: `docker attach foo`.
+- Prompt changes to `root` of container.
+- Use `ls` to view file directories.
+- Use `Ctrl+P+Q` to escape out of container's directory.
+- Note that `Ctrl+D` will stop the container.
+
+
+### 5. Viewing logs without Attaching to container
+- Type command: `docker logs foo`.
+- It returns everything typed on container's terminal.
+- It can also be used to view what the container is printing out.
+
+
