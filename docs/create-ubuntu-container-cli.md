@@ -36,17 +36,57 @@
 - Our container will be displayed with state **Created**.
 
 
-### 4. Getting into Container's file system
-- Type command: `docker attach foo`.
+### 4. Starting a docker container:
+- Type command: `docker start foo` to start the container.
+
+
+
+### 5. Getting into Container's file system
+
+- Type command: `docker attach foo`. This changes the state to **Running**.
 - Prompt changes to `root` of container with few characters of container's hash string.
 - Use `ls` to view file directories.
 - Use `Ctrl+P+Q` to escape out of container's directory.
 - Note that `Ctrl+D` will stop the container.
 
 
-### 5. Viewing logs without Attaching to container
+### 6. Viewing logs without Attaching to container
 - Type command: `docker logs foo`.
 - It returns everything typed on container's terminal.
 - It can also be used to view what the container is printing out.
+
+
+------
+
+## More Commands
+
+
+### Stopping a container:
+- Type command: `docker stop foo` or `docker stop <hash>`.
+- It might take some time to stop a running container.
+- Name of the container is printed after it has stopped.
+
+
+### Removing a container:
+- Note that a running container cannot be removed. We need to stop it first.
+- Type command: `docker rm foo` or `docker rm <hash>`.
+- Name of container is printed after task completes.
+- It removes space used by container.
+
+
+### Running a container quickly using 'run'
+- Both creates and attaches with container.
+- Type command: `docker run --name=bar -it ubuntu bash`.
+- It immediately attaches to container.
+
+
+### Force Remove container:
+- It stops and removes the container.
+- Command: `docker rm -f bar`.
+
+
+### List all Docker Images:
+- Use command: `docker image ls` to list all docker images.
+
 
 
