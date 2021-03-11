@@ -38,7 +38,7 @@
 
 ### 4. Getting into Container's file system
 - Type command: `docker attach foo`.
-- Prompt changes to `root` of container.
+- Prompt changes to `root` of container with few characters of container's hash string.
 - Use `ls` to view file directories.
 - Use `Ctrl+P+Q` to escape out of container's directory.
 - Note that `Ctrl+D` will stop the container.
