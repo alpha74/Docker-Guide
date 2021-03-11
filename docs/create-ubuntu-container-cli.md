@@ -7,7 +7,7 @@
 
 
 
-### 1. Get ubuntu docker image
+### 1. Search ubuntu docker image
 - Type command: `docker search ubuntu`
 - We get a list of all related ubuntu images along with description.
 - OFFICIAL keyword tells if the images are official images of docker.
@@ -47,7 +47,7 @@
 - Prompt changes to `root` of container with few characters of container's hash string.
 - Use `ls` to view file directories.
 - Use `Ctrl+P+Q` to escape out of container's directory.
-- Note that `Ctrl+D` will stop the container.
+- Note that `Ctrl+D` will stop the container. 
 
 
 ### 6. Viewing logs without Attaching to container
@@ -65,6 +65,7 @@
 - Type command: `docker stop foo` or `docker stop <hash>`.
 - It might take some time to stop a running container.
 - Name of the container is printed after it has stopped.
+- Command: `docker rm -f bar`. It stops and removes the container.
 
 
 ### Removing a container:
@@ -72,6 +73,7 @@
 - Type command: `docker rm foo` or `docker rm <hash>`.
 - Name of container is printed after task completes.
 - It removes space used by container.
+- Use: `docker container ls -aq | xargs docker container rm` to remove all containers.
 
 
 ### Running a container quickly using 'run'
@@ -80,13 +82,7 @@
 - It immediately attaches to container.
 
 
-### Force Remove container:
-- It stops and removes the container.
-- Command: `docker rm -f bar`.
 
-
-### List all Docker Images:
+### Manipulate Docker Images:
 - Use command: `docker image ls` to list all docker images.
-
-
-
+- Use `docker image ls -aq | xargs docker rmi -f` to remove all images.
