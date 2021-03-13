@@ -34,25 +34,25 @@ COPY ./display ./display
 CMD serve ./display
 ```
 
-  - `FROM node:latest`:
-    - `FROM` is used to choose a DockerImage.
-    - Command to get the latest version of nodejs.
-    - You can use `docker search node` to choose an appropriate nodejs image.
-    - `latest` keyword fetches the latest image of `node`.
+- `FROM node:latest`:
+  - `FROM` is used to choose a DockerImage.
+  - Command to get the latest version of nodejs.
+  - You can use `docker search node` to choose an appropriate nodejs image.
+  - `latest` keyword fetches the latest image of `node`.
 
-  - `RUN npm install -g serve`:
-    - `RUN` is used to run an application within a Docker container.
-    - This command will install `serve` node package inside the container.
-    - `-g` flag makes `serve` to install globally so that it can be accessed anywhere in the container.
+- `RUN npm install -g serve`:
+  - `RUN` is used to run an application within a Docker container.
+  - This command will install `serve` node package inside the container.
+  - `-g` flag makes `serve` to install globally so that it can be accessed anywhere in the container.
 
-  - `COPY ./display ./display`:
-    - `COPY` copies a local file to container directory. It creates the file if it already not exists.
-    - Here, it copies local `display` dir to container file system.
+- `COPY ./display ./display`:
+  - `COPY` copies a local file to container directory. It creates the file if it already not exists.
+  - Here, it copies local `display` dir to container file system.
 
 
-  - `CMD serve ./display`:
-    - `CMD` is used to use a commandline tool. For Ubuntu: it is `bash`.
-    - This command will evaluated by `bash` as `server ./display`
+- `CMD serve ./display`:
+  - `CMD` is used to use a commandline tool. For Ubuntu: it is `bash`.
+  - This command will evaluated by `bash` as `server ./display`
 
 
 
