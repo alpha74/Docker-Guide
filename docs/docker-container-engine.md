@@ -32,4 +32,6 @@
 - Isolation allows easy CI/CD and development.
 
 - Better than Virtual machines as a container is more light-weight.
-- The file system is strictly separate for VMs, but can be shared by Docker Containers depending on situation.f
+- The file system is strictly separate for VMs, but can be shared by Docker Containers depending on situation.
+
+[Container: Official docs](https://www.docker.com/resources/what-container)
