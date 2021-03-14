@@ -60,6 +60,7 @@ CMD serve ./display
 - Inside `fileviewer` directory, type: `docker build . -t alpha74/fileviewer`
 - `.` indicates that we are building from local path.
 - `-t` is used to set name and a tag.
+- `alpha74/fileviewer` is the image name. Format: `<username>/<image-name>`.
 - It will download `node` image from DockerHub and will create a DockerImage.
 
 
