@@ -14,4 +14,4 @@
 
 - [Create Docker Image for a Nodejs File Server Application using CLI](https://github.com/alpha74/Docker-Guide/blob/main/docs/create-docker-image-file-server-cli.md)
 
-- [Create Docker Image for a ExpressJs server using CLI](https://github.com/alpha74/Docker-Guide/tree/main/docs)
+- [Create Docker Image for a ExpressJs server using CLI](https://github.com/alpha74/Docker-Guide/blob/main/docs/create-expressjs-image-cli.md)
