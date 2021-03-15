@@ -1,5 +1,7 @@
 # Create ExpressJS Docker Image using CLI
 
+<img src="https://miro.medium.com/max/6668/1*XP-mZOrIqX7OsFInN2ngRQ.png" width=300>
+
 - We will create a Docker image for ExpressJs server.
 - We will then create a Docker container from that docker image.
 
