@@ -9,7 +9,9 @@
 
 
 ### 1. Create a directory structure
-- Create a directory named `fileviewer`(This is an optional step. Skip if you know the usage of `serve` package in nodejs).
+- Create a directory named `fileviewer` in directory `docker`. (This is an optional step. Skip if you know the usage of `serve` package in nodejs).
+- Type: `mkdir docker`.
+- Type:  `cd docker`.
 - Type: `mkdir fileserver`
 - Type: `cd fileserver`
 
