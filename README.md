@@ -6,6 +6,7 @@
 
 - [Docker Container and Docker Engine](https://github.com/alpha74/Docker-Manual/blob/main/docs/docker-container-engine.md) 
 - [Docker Images and Dockerfile](https://github.com/alpha74/Docker-Manual/blob/main/docs/docker-images.md)
+- [Layered Image Cache in Docker and .dockerignore](https://github.com/alpha74/Docker-Guide/blob/main/docs/layered-image-cache-and-dockerignore.md)
 
 
 ### How to:
